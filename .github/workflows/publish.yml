@@ -64,7 +64,7 @@ jobs:
       - name: Set github
         run: |
           git config --global user.email "Lance Github Runner"
-          git config --global user.name "dev+gha@lancedb.com"
+          git config --global user.name "dev+gha@lance.org"
 
       - name: Get Trino version
         id: get_trino_version
