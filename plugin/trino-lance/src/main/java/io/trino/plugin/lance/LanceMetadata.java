@@ -69,8 +69,6 @@ import org.lance.ReadOptions;
 import org.lance.SourcedTransaction;
 import org.lance.WriteParams;
 import org.lance.namespace.LanceNamespace;
-import org.lance.namespace.model.CreateEmptyTableRequest;
-import org.lance.namespace.model.CreateEmptyTableResponse;
 import org.lance.namespace.model.CreateNamespaceRequest;
 import org.lance.namespace.model.DeclareTableRequest;
 import org.lance.namespace.model.DeclareTableResponse;
@@ -793,10 +791,10 @@ public class LanceMetadata
             return;
         }
 
-        // Create new table via namespace API
-        CreateEmptyTableRequest createRequest = new CreateEmptyTableRequest()
+        // Declare new table via namespace API
+        DeclareTableRequest declareTableRequest = new DeclareTableRequest()
                 .id(tableId);
-        CreateEmptyTableResponse createResponse = getNamespace().createEmptyTable(createRequest);
+        DeclareTableResponse createResponse = getNamespace().declareTable(declareTableRequest);
         String tablePath = createResponse.getLocation();
 
         Map<String, String> storageOptions = getStorageOptionsForTable(tableId);
