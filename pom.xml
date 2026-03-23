@@ -37,10 +37,10 @@
     </modules>
 
     <scm child.scm.connection.inherit.append.path="false" child.scm.developerConnection.inherit.append.path="false" child.scm.url.inherit.append.path="false">
-        <connection>scm:git:git@github.com:lancedb/lance-trino.git</connection>
-        <developerConnection>scm:git:git@github.com:lancedb/lance-trino.git</developerConnection>
+        <connection>scm:git:git@github.com:lance-format/lance-trino.git</connection>
+        <developerConnection>scm:git:git@github.com:lance-format/lance-trino.git</developerConnection>
         <tag>HEAD</tag>
-        <url>git@github.com:lancedb/lance-trino.git</url>
+        <url>git@github.com:lance-format/lance-trino.git</url>
     </scm>
 
     <distributionManagement>
